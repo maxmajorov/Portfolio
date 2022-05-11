@@ -1,0 +1,31 @@
+.footer__container {
+  padding-top: 23px;
+  padding-bottom: 20px;
+  background-color: rgb(189, 79, 199);
+}
+
+.title {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__socialList {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socialList__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+}
+

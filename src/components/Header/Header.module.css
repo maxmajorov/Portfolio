@@ -1,23 +1,25 @@
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 23px;
-  padding-bottom: 20px;
+.header { 
+  padding: 20px 0;
   background-color: aqua;
 }
 
-.logo {
-  padding-left: 50px;
+.header__navigation{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation__list {
   display: flex;
-  justify-content: space-between;
-  padding-right: 50px;
+  width: 340px;
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
+@media only screen and (max-width: 360px) {
+  .navigation__list {
+    justify-content: center;
+  }
+}
 

@@ -4,7 +4,6 @@ import classes from "./SkillsList.module.css";
 import react from "../../assets/img/react.png";
 import redux from "../../assets/img/redux.png";
 import ts from "../../assets/img/ts.png";
-import devider from "../../assets/img/devider.svg";
 import { v1 } from "uuid";
 
 export const SkillsList: React.FC = () => {
@@ -36,9 +35,8 @@ export const SkillsList: React.FC = () => {
   ];
 
   return (
-    <div className={classes.skills__container}>
+    <section className={classes.skillsBlock}>
       <h2 className={classes.title}>My Skills</h2>
-      <img src={devider} alt="devider" />
       <ul className={classes.skills__list}>
         {skillsState.map((skill) => (
           <SkillsItem
@@ -49,6 +47,6 @@ export const SkillsList: React.FC = () => {
           />
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
