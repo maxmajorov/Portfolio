@@ -1,0 +1,23 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  background-color: aqua;
+}
+
+.logo {
+  padding-left: 50px;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
