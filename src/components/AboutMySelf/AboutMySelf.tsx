@@ -9,7 +9,7 @@ export const AboutMySelf: React.FC = () => {
       <div className={classes.container}>
         <div className={classes.intoduce}>
           <span>Hi There</span>
-          <h1>I am Max Predko</h1>
+          <h1>I am Maxim Predko</h1>
           <p>A React Front-End Developer</p>
         </div>
         <div className={classes.photo}>
