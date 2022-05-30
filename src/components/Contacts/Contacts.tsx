@@ -37,7 +37,7 @@ export const Contacts: React.FC = () => {
 
           <div className={classes.centeredButton}>
             <button className="contacts-form__btn btn btn--fill" type="submit">
-              send request
+              send message
             </button>
           </div>
         </form>
