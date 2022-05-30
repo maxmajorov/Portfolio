@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./WorksList.module.css";
 import { v1 } from "uuid";
 import { WorkItem } from "../WorkItem/WorkItem";
+import { Title } from "../../common/components/Title/Title";
 
 export const WorksList: React.FC = () => {
   type worksStateType = {
@@ -33,7 +34,7 @@ export const WorksList: React.FC = () => {
 
   return (
     <section className={classes.worksBlock}>
-      <h2 className={classes.title}>My Works</h2>
+      <Title title="my projects" />
       <ul className={classes.works__list}>
         {worksState.map((work) => (
           <WorkItem

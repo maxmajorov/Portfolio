@@ -5,6 +5,7 @@ import react from "../../assets/img/react.png";
 import redux from "../../assets/img/redux.png";
 import ts from "../../assets/img/ts.png";
 import { v1 } from "uuid";
+import { Title } from "../../common/components/Title/Title";
 
 export const SkillsList: React.FC = () => {
   type SkillsStateType = {
@@ -36,7 +37,7 @@ export const SkillsList: React.FC = () => {
 
   return (
     <section className={classes.skillsBlock}>
-      <h2 className={classes.title}>My Skills</h2>
+      <Title title="my skils" />
       <ul className={classes.skills__list}>
         {skillsState.map((skill) => (
           <SkillsItem

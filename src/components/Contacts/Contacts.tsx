@@ -1,10 +1,12 @@
 import React from "react";
+import { Button } from "../../common/components/Button/Button";
+import { Title } from "../../common/components/Title/Title";
 import classes from "./Contacts.module.css";
 
 export const Contacts: React.FC = () => {
   return (
     <section className={classes.contactsBlock}>
-      <h2 className={classes.title}>Contact</h2>
+      <Title title="contacts" />
       <div className={classes.inputField}>
         <form className={classes.contacts__form}>
           <h3 className={classes.contactsForm__title}>
@@ -35,11 +37,7 @@ export const Contacts: React.FC = () => {
             className={classes.form__input}
           ></textarea>
 
-          <div className={classes.centeredButton}>
-            <button className="contacts-form__btn btn btn--fill" type="submit">
-              send message
-            </button>
-          </div>
+          <Button />
         </form>
       </div>
     </section>
