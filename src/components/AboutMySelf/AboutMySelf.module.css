@@ -16,7 +16,7 @@
 }
 
 .container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -63,12 +63,67 @@
   transition: all .5s; 
 }
 
+.avatar {
+  position: relative;
+}
+
 .photo {
   width: 400px;
-  border: 8px solid #ff0066;
-  border-radius: 50%;
-  box-shadow: 0px 5px 100px -15px #ff0066;
-}  
+  transform: rotate(45deg);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+ .photo > img {
+  max-width: 100%;
+  transform: rotate(-45deg) scale(1.42);
+} 
+
+.frame {
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  width: 380px;
+  height: 400px;
+  border: 5px solid #ff0066;
+  /* box-shadow: 0px 5px 100px -15px #ff0066; */
+  border-radius: 10px;
+  transform: rotate(45deg);
+ }
+
+
+.greeting, .name, .specialization, .btn {
+  margin-bottom: 30px;
+  position: relative;
+  animation: showLeft 1.5s;
+  z-index: 1;
+}
+  
+  @keyframes showLeft {
+  
+  from {left:-100%;}
+  
+  to {left:0;}
+  
+  }
+
+  .avatar {
+    margin-bottom: 30px;
+    position: relative;
+    animation: showRight 1.5s;
+    z-index: 1;
+  }
+  
+  @keyframes showRight {
+  
+  from {right:-100%;}
+  
+  to {right:0;}
+  
+  }
+
+
+
 
 /* @media only screen and (max-width: 360px) {
   .mainBlock  {

@@ -17,12 +17,15 @@ export const AboutMySelf: React.FC = () => {
               Contact me
             </a>
           </div>
-          <div className={classes.photo}>
-            <img
-              src={avatar}
-              alt="avatar"
-              style={{ borderRadius: "50%", transform: "translateY(3px)" }}
-            />
+          <div className={classes.avatar}>
+            <div className={classes.frame}></div>
+            <div className={classes.photo}>
+              <img
+                src={avatar}
+                alt="avatar"
+                // style={{ borderRadius: "50%", transform: "translateY(3px)" }}
+              />
+            </div>
           </div>
         </div>
       </div>
