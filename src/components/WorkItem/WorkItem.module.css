@@ -11,13 +11,12 @@
     transition: ease-in-out 1.5s background-color;
   }
 
-  .info:hover ~ * {
+  .item:hover > a {
    color: white;
    transition: ease-in-out 1.5s color;
     
   }
-  
-  
+    
   .image {
     width: 400px;
     height: 250px;

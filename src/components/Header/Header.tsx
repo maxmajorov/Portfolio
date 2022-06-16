@@ -3,6 +3,7 @@ import classes from "./Header.module.css";
 // import classesContainer from "../../assets/css/Container.module.css";
 
 export const Header: React.FC = () => {
+  console.log(window.location);
   return (
     <header className={classes.header}>
       <div className={classes.container}>

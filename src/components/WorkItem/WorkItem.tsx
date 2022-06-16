@@ -19,7 +19,9 @@ export const WorkItem: React.FC<WorkItemProps> = ({
         <h3 className={classes.title}>{title}</h3>
         <span className={classes.description}>{description}</span>
       </div>
-      <a className={classes.viewBtn}>Show more</a>
+      <a href="#xxx" className={classes.viewBtn}>
+        Show more
+      </a>
     </li>
   );
 };

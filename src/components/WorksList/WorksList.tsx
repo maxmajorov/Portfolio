@@ -35,7 +35,7 @@ export const WorksList: React.FC = () => {
   ];
 
   return (
-    <section className={classes.worksBlock}>
+    <section id="projects" className={classes.worksBlock}>
       <div className={classes.container}>
         <Title title="my projects" />
         <ul className={classes.list}>

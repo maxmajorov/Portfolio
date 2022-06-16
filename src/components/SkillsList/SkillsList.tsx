@@ -36,7 +36,7 @@ export const SkillsList: React.FC = () => {
   ];
 
   return (
-    <section className={classes.skillsBlock}>
+    <section id="skills" className={classes.skillsBlock}>
       <Title title="my skils" />
       <ul className={classes.skills__list}>
         {skillsState.map((skill) => (

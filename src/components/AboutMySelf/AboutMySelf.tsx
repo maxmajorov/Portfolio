@@ -1,13 +1,13 @@
 import React from "react";
-import classes from "./AboutMySelf.module.css";
+import classes from "./AboutMySelf.module.scss";
 import avatar from "../../assets/img/avatar.jpg";
 
 export const AboutMySelf: React.FC = () => {
   return (
-    <section className={classes.mainBlock}>
+    <section id="home" className={classes.mainBlock}>
       <div className={classes.overlay}>
         <div className={classes.container}>
-          <div className={classes.intoduce}>
+          <div className={classes.introduce}>
             <h4 className={classes.greeting}>Hi There</h4>
             <h1 className={classes.name}>I'm Maxim Predko</h1>
             <h4 className={classes.specialization}>
