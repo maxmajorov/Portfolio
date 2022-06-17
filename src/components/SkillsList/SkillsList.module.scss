@@ -1,0 +1,27 @@
+@import '../../common/styles/scss/variables.scss';
+
+
+.skills {
+  position: relative;
+  background-color: $backgroundColorLightDark;
+  padding: 120px 0 ;
+
+  .container {
+    width: 75%;
+    margin: 0 auto;
+   
+    .list {
+      display: grid;
+      // grid-template-columns: repeat(4, 1fr);  	
+      grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+     
+  
+      @media screen and (min-width: 360px) {
+        height: 100%;
+      }
+    }
+
+  }
+
+
+}

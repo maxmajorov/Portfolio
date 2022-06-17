@@ -2,7 +2,7 @@
 
 
 .mainBlock{
-  height: 100vh;
+
   background-color: $backgroundColorDark; 
 
   @media only screen and (max-width: 767px) {
@@ -15,6 +15,7 @@
   }
 
     .container {
+      height: 100vh;
       width: 75%;
       margin: 0 auto;
       display: flex;
@@ -22,9 +23,9 @@
       align-items: center;
       flex-wrap: wrap;
 
-      @media only screen and (max-width: 576px) {
+
+      @media only screen and (max-width: 767px) {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
@@ -52,7 +53,9 @@
         .name{
           font-family: $fontPoppins;
           font-size: 64px;
-          font-weight: 600;
+          font-weight: 700;
+          line-height: 34px;
+          color: $textColor;
           margin-bottom: 34px;
 
           @media only screen and (max-width: 767px) {
@@ -63,13 +66,15 @@
 
         .specialization {
           font-size: 24px;
+          font-weight: 500;
           letter-spacing: 1px;
+          line-height: 34px;
+          color: $textColor;
           margin-bottom: 56px;
 
           @media only screen and (max-width: 767px) {
             font-size: 18px;  
             line-height: 26px; 
-            margin-bottom: 56px;     
           }
 
         }
@@ -80,6 +85,7 @@
           letter-spacing: 2px;
           text-transform: uppercase;
           background-color: $primaryColor;
+          color: $textColor;
           border-radius: 6px;
           line-height: 60px;
           height: 60px;
@@ -90,9 +96,9 @@
         }
       }
 
-      .avatar {
-      
-
+      .avatar {  
+         position: relative;
+        
         .frame {
           position: absolute;
           top: 0px;
@@ -100,7 +106,6 @@
           width: 380px;
           height: 400px;
           border: 5px solid $primaryColor;
-          /* box-shadow: 0px 5px 100px -15px #ff0066; */
           border-radius: 10px;
           transform: rotate(45deg);
 
@@ -111,19 +116,23 @@
         }
 
         .photo {
-          width: 400px;
+   
           transform: rotate(45deg);
           overflow: hidden;
           border-radius: 10px;
-          
-          > img {
-            max-width: 100%;
-            transform: rotate(-45deg) scale(1.42);
-          }
 
-          @media only screen and (max-width: 767px) {
-            width: 97%;
-            
+       
+                  
+          > img {
+            max-width: 400px;
+            height: auto;
+            transform: rotate(-45deg) scale(1.42);
+     
+
+            @media only screen and (max-width: 767px) {
+              width: 100%;
+              
+            }
           }
         }
       }

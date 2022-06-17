@@ -1,0 +1,70 @@
+@import '../../common/styles/scss/variables.scss';
+
+.header {
+  // position: fixed;
+  width: 100%;
+  background-color: $backgroundColorDark;
+  border-bottom: 1px solid #505050;
+  z-index: 1000;
+
+  .container {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    .siteMenu {
+      padding: 20px 0;
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        flex-wrap: wrap;
+
+        .logoStyle {
+          font-size: 36px;
+        }
+      }
+
+      .navigation {
+
+        &__list {
+          display: flex;
+          justify-content: space-between;
+          width: 350px;
+        }
+
+        &__item {
+
+          & a {
+            position: relative;
+            display: block;
+            color: $textColor;
+            font-size: 14px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            transition: all .5s;
+          }
+
+          & a:hover {
+            color: $primaryColor;
+            transition: all 1s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: $primaryColor;
+}
+
+
+
+// @media only screen and (max-width: 360px) {
+//   .navigation__list {
+//     justify-content: center;
+//   }
+// }
+

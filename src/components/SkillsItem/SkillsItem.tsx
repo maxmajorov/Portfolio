@@ -1,22 +1,30 @@
 import React from "react";
-import classes from "./SkillsItem.module.css";
+import classes from "./SkillsItem.module.scss";
 
 type SkillsItemProps = {
   logo: string;
   title: string;
-  description: string;
+  persent: number;
 };
 
 export const SkillsItem: React.FC<SkillsItemProps> = ({
   logo,
   title,
-  description,
+  persent,
 }) => {
   return (
-    <li className={classes.skill__item}>
-      <img className={classes.logo} src={logo} alt="skill-item-logo" />
-      <h3 className={classes.skill__title}>{title}</h3>
-      <span className={classes.skill__description}>{description}</span>
+    <li className={classes.skillItem}>
+      {/* <img
+        className={classes.skillItem__logo}
+        src={logo}
+        alt="skill-item-logo"
+      /> */}
+
+      <h3 className={classes.skillItem__title}>{title}</h3>
+      <div className={classes.skillItem__meter}>
+        <span style={{ width: `${persent}%` }}></span>
+        <div className={classes.persent}>{persent}%</div>
+      </div>
     </li>
   );
 };

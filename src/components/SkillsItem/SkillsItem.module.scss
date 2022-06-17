@@ -1,0 +1,64 @@
+@import '../../common/styles/scss/variables.scss';
+
+.skillItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+
+  &__logo {
+    width: 64px;
+    height: 64px;
+
+  }
+
+  &__title {
+    padding-top: 24px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    line-height: 36px;
+    color: $textColor; 
+  }
+
+
+  &__meter {
+    position: relative;
+    width: 70%;
+    height: 5px;
+    position: relative;
+    background: rgba(85, 85, 85, 0.884);
+    border-radius: 3px;
+    
+    > span {
+      display: block;
+      height: 100%;
+      background-color: $primaryColor;
+    }
+
+    .persent {
+      position: absolute;
+      right: 5px;
+      bottom: 10px;   
+    }
+  }
+}
+
+
+.skillItem {
+  margin-bottom: 30px;
+  position: relative;
+  animation: showUP 2.5s;
+  z-index: 1;
+}
+  
+  @keyframes showUP {
+  
+  from {top:-100%;}
+  
+  to {top:0;}
+  
+  }

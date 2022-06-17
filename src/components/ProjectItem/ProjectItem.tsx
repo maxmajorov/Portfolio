@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./WorkItem.module.css";
+import classes from "./ProjectItem.module.scss";
 
 type WorkItemProps = {
   image: { backgroundImage: string };
@@ -13,13 +13,13 @@ export const WorkItem: React.FC<WorkItemProps> = ({
   description,
 }) => {
   return (
-    <li className={classes.item}>
-      <div className={classes.image} style={image} />
-      <div className={classes.info}>
+    <li className={classes.projectItem}>
+      <div className={classes.projectItem__image} style={image} />
+      <div className={classes.projectItem__info}>
         <h3 className={classes.title}>{title}</h3>
         <span className={classes.description}>{description}</span>
       </div>
-      <a href="#xxx" className={classes.viewBtn}>
+      <a href="#xxx" className={classes.projectItem__viewBtn}>
         Show more
       </a>
     </li>

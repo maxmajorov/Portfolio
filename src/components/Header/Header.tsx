@@ -1,9 +1,9 @@
 import React from "react";
-import classes from "./Header.module.css";
+import { Menu } from "../../common/components/Menu/Menu";
+import classes from "./Header.module.scss";
 // import classesContainer from "../../assets/css/Container.module.css";
 
 export const Header: React.FC = () => {
-  console.log(window.location);
   return (
     <header className={classes.header}>
       <div className={classes.container}>
@@ -14,27 +14,27 @@ export const Header: React.FC = () => {
                 MAX<span style={{ color: "#ff0066" }}>I</span>M
               </a>
             </div>
-            <div className={classes.navigation}>
-              <nav className={classes.header__navigation}>
-                <ul className={classes.navigation__list}>
-                  <li className={classes.navigation__item}>
-                    <a href="#home">Home</a>
-                  </li>
+            <Menu />
 
-                  <li className={classes.navigation__item}>
-                    <a href="#skills">Skills</a>
-                  </li>
+            <nav className={classes.navigation}>
+              <ul className={classes.navigation__list}>
+                <li className={classes.navigation__item}>
+                  <a href="#home">Home</a>
+                </li>
 
-                  <li className={classes.navigation__item}>
-                    <a href="#projects">Projects</a>
-                  </li>
+                <li className={classes.navigation__item}>
+                  <a href="#skills">Skills</a>
+                </li>
 
-                  <li className={classes.navigation__item}>
-                    <a href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                <li className={classes.navigation__item}>
+                  <a href="#projects">Projects</a>
+                </li>
+
+                <li className={classes.navigation__item}>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

@@ -1,0 +1,27 @@
+@import '../../common/styles/scss/variables.scss';
+
+.projects {
+  background-color: $backgroundColorDark;
+  padding: 120px 0;
+
+  @media (min-width: 360px) {
+    height: 100%;
+  }
+
+  .container {
+    width: 75%;
+    margin: 0 auto;
+
+    @media (max-width: 360px) {
+      width: 100%;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );   
+      // display: flex;
+      // justify-content: space-between;
+      // flex-wrap: wrap;  
+    }
+  }
+}
