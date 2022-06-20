@@ -20,11 +20,14 @@ export const App: React.FC = () => {
 
   return (
     <div className="App">
-      <nav className="burger">
-        <div className="burgerBtn" onClick={() => setMenuActive(!menuActive)}>
-          <span />
-        </div>
-      </nav>
+      <div className="menu">
+        <nav className="burger">
+          <div className="burgerBtn" onClick={() => setMenuActive(!menuActive)}>
+            <span />
+          </div>
+        </nav>
+      </div>
+
       <div>
         <Header />
         <AboutMySelf />

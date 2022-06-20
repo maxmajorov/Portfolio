@@ -10,7 +10,7 @@ export const AboutMySelf: React.FC = () => {
           <h4 className={classes.greeting}>Hi There</h4>
           <h1 className={classes.name}>I'm Maxim Predko</h1>
           <h4 className={classes.specialization}>Front-End Developer</h4>
-          <a href="#contact" className={classes.btn}>
+          <a href="#contacts" className={classes.btn}>
             Contact me
           </a>
         </div>
