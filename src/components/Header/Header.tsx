@@ -1,7 +1,12 @@
 import React from "react";
-import { Menu } from "../../common/components/Menu/Menu";
 import classes from "./Header.module.scss";
-// import classesContainer from "../../assets/css/Container.module.css";
+
+type ItemType = {
+  href: string;
+  title: string;
+  isActive: boolean;
+};
+export type MenuItemsType = Array<ItemType>;
 
 export const Header: React.FC = () => {
   return (
@@ -14,9 +19,8 @@ export const Header: React.FC = () => {
                 MAX<span style={{ color: "#ff0066" }}>I</span>M
               </a>
             </div>
-            <Menu />
 
-            <nav className={classes.navigation}>
+            {/* <nav className={classes.navigation}>
               <ul className={classes.navigation__list}>
                 <li className={classes.navigation__item}>
                   <a href="#home">Home</a>
@@ -34,7 +38,7 @@ export const Header: React.FC = () => {
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
-            </nav>
+            </nav> */}
           </div>
         </div>
       </div>

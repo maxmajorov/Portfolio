@@ -5,7 +5,7 @@ import classes from "./Contacts.module.css";
 
 export const Contacts: React.FC = () => {
   return (
-    <section className={classes.contactsBlock}>
+    <section id="contacts" className={classes.contactsBlock}>
       <Title title="contacts" />
       <div className={classes.inputField}>
         <form className={classes.contacts__form}>

@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
               </a>
             </div>
             <div className={classes.navigation}>
-              <nav className={classes.header__navigation}>
+              <div className={classes.header__navigation}>
                 <ul className={classes.navigation__list}>
                   <li className={classes.socialList__item}>
                     <a href="#home">LinkedIn</a>
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
                     <a href="#contact">Twitter</a>
                   </li>
                 </ul>
-              </nav>
+              </div>
             </div>
           </div>
         </div>
