@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0cec2c63.chunk.css",
-    "main.js": "/Portfolio/static/js/main.90b89267.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.90b89267.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.b3e46ab0.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c73366ae.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c73366ae.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
-    "static/js/2.864034d8.chunk.js": "/Portfolio/static/js/2.864034d8.chunk.js",
-    "static/js/2.864034d8.chunk.js.map": "/Portfolio/static/js/2.864034d8.chunk.js.map",
+    "static/css/2.acf94c4a.chunk.css": "/Portfolio/static/css/2.acf94c4a.chunk.css",
+    "static/js/2.ac3da1b0.chunk.js": "/Portfolio/static/js/2.ac3da1b0.chunk.js",
+    "static/js/2.ac3da1b0.chunk.js.map": "/Portfolio/static/js/2.ac3da1b0.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.fd30ec77d5761a6d5320199423c67730.js": "/Portfolio/precache-manifest.fd30ec77d5761a6d5320199423c67730.js",
+    "precache-manifest.7d750814af0a400c46449bfc73fb7ba1.js": "/Portfolio/precache-manifest.7d750814af0a400c46449bfc73fb7ba1.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.0cec2c63.chunk.css.map": "/Portfolio/static/css/main.0cec2c63.chunk.css.map",
-    "static/js/2.864034d8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.864034d8.chunk.js.LICENSE.txt",
-    "static/media/avatar.jpg": "/Portfolio/static/media/avatar.b24c88e4.jpg",
-    "static/media/SkillsList.module.css": "/Portfolio/static/media/devider.eac3c0fa.svg",
+    "static/css/2.acf94c4a.chunk.css.map": "/Portfolio/static/css/2.acf94c4a.chunk.css.map",
+    "static/css/main.b3e46ab0.chunk.css.map": "/Portfolio/static/css/main.b3e46ab0.chunk.css.map",
+    "static/js/2.ac3da1b0.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ac3da1b0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Portfolio/static/media/Raleway-Thin.07ac22f3.ttf",
+    "static/media/avatar.jpg": "/Portfolio/static/media/avatar.db5b5c57.jpg",
     "static/media/react.png": "/Portfolio/static/media/react.65fe5ca4.png",
     "static/media/redux.png": "/Portfolio/static/media/redux.b8b5a3d1.png",
+    "static/media/social.jpg": "/Portfolio/static/media/social.51681cd4.jpg",
+    "static/media/todo.jpg": "/Portfolio/static/media/todo.b7ff873a.jpg",
     "static/media/ts.png": "/Portfolio/static/media/ts.9b541fa3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
-    "static/js/2.864034d8.chunk.js",
-    "static/css/main.0cec2c63.chunk.css",
-    "static/js/main.90b89267.chunk.js"
+    "static/css/2.acf94c4a.chunk.css",
+    "static/js/2.ac3da1b0.chunk.js",
+    "static/css/main.b3e46ab0.chunk.css",
+    "static/js/main.c73366ae.chunk.js"
   ]
 }
