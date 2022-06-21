@@ -46,17 +46,20 @@ export const Menu: React.FC<MenuPropsType> = ({
         <div className={classes.social}>
           <ul>
             <li>
-              <a href="">
+              <a href="https://t.me/maxpredko" target="blank">
                 <TelegramIcon fontSize={"large"} color={"primary"} />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/maxim-predko/"
+                target="blank"
+              >
                 <LinkedInIcon fontSize={"large"} color={"primary"} />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://github.com/maxmajorov" target="blank">
                 <GitHubIcon fontSize={"large"} color={"primary"} />
               </a>
             </li>

@@ -6,7 +6,7 @@ import classes from "./Contacts.module.css";
 export const Contacts: React.FC = () => {
   return (
     <section id="contacts" className={classes.contactsBlock}>
-      <Title title="contacts" />
+      <Title title="get in touch" />
       <div className={classes.inputField}>
         <form className={classes.contacts__form}>
           <h3 className={classes.contactsForm__title}>
