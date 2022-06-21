@@ -5,16 +5,18 @@
   text-align: center;
   text-transform: capitalize;
   padding-bottom: 60px;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #ff0066;
+    margin: 19px auto 0;
+  } 
 }
 
 
-.title::after {
-  display: block;
-  content: '';
-  width: 100px;
-  height: 5px;
-  background-color: #ff0066;
-  margin: 19px auto 0;
-} 
+
 
 

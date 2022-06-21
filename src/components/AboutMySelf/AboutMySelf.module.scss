@@ -23,17 +23,28 @@
       align-items: center;
       flex-wrap: wrap;
 
+      
+        @media (min-width: 320px) {
+          max-width: 300px;
+        }
+        
+        @media (min-width: 576px) {
+          max-width: 540px;
+        }
 
-      @media only screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    
-      }
+        @media (min-width: 992px) {
+          max-width: 960px;
+        }
 
-      .introduce {
+        @media (min-width: 768px) {
+          max-width: 720px;
+        }
+
+        @media (min-width: 1200px) {
+          max-width: 75%;
+        }
+
+       .introduce {
         font-weight: 300;
 
         @media only screen and (max-width: 767px) {
