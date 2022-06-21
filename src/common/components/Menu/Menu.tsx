@@ -31,6 +31,7 @@ export const Menu: React.FC<MenuPropsType> = ({
       className={active ? `${classes.menu} ${classes.active}` : classes.menu}
       onClick={() => setActive(false)}
     >
+      <div className={classes.blur}></div>
       <div className={classes.content} onClick={(e) => e.stopPropagation}>
         <ul>
           {menuItems.map((item, ind) => {
@@ -41,36 +42,36 @@ export const Menu: React.FC<MenuPropsType> = ({
             );
           })}
         </ul>
+        <ThemeProvider theme={theme}>
+          <div className={classes.social}>
+            <ul>
+              <li>
+                <a href="https://t.me/maxpredko" target="blank">
+                  <TelegramIcon fontSize={"large"} color={"primary"} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maxim-predko/"
+                  target="blank"
+                >
+                  <LinkedInIcon fontSize={"large"} color={"primary"} />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/maxmajorov" target="blank">
+                  <GitHubIcon fontSize={"large"} color={"primary"} />
+                </a>
+              </li>
+              <li>
+                <a href="#contacts">
+                  <EmailIcon fontSize={"large"} color={"primary"} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ThemeProvider>
       </div>
-      <ThemeProvider theme={theme}>
-        <div className={classes.social}>
-          <ul>
-            <li>
-              <a href="https://t.me/maxpredko" target="blank">
-                <TelegramIcon fontSize={"large"} color={"primary"} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/maxim-predko/"
-                target="blank"
-              >
-                <LinkedInIcon fontSize={"large"} color={"primary"} />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/maxmajorov" target="blank">
-                <GitHubIcon fontSize={"large"} color={"primary"} />
-              </a>
-            </li>
-            <li>
-              <a href="#contacts">
-                <EmailIcon fontSize={"large"} color={"primary"} />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </ThemeProvider>
     </div>
   );
 };
