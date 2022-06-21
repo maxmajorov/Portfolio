@@ -24,6 +24,7 @@
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
     "sass": "^1.52.3",
+    "swiper": "^8.2.4",
     "tsparticles": "^2.0.6",
     "typescript": "~3.7.2",
     "uuid": "^8.3.2"

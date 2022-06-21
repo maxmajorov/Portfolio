@@ -1,5 +1,10 @@
 import React, { Dispatch, SetStateAction } from "react";
 import { MenuItemsType } from "../../../components/Header/Header";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 import classes from "./Menu.module.scss";
 
 type MenuPropsType = {
@@ -13,6 +18,14 @@ export const Menu: React.FC<MenuPropsType> = ({
   active,
   setActive,
 }) => {
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#ff0066",
+      },
+    },
+  });
+
   return (
     <div
       className={active ? `${classes.menu} ${classes.active}` : classes.menu}
@@ -29,6 +42,32 @@ export const Menu: React.FC<MenuPropsType> = ({
           })}
         </ul>
       </div>
+      <ThemeProvider theme={theme}>
+        <div className={classes.social}>
+          <ul>
+            <li>
+              <a href="">
+                <TelegramIcon fontSize={"large"} color={"primary"} />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <LinkedInIcon fontSize={"large"} color={"primary"} />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <GitHubIcon fontSize={"large"} color={"primary"} />
+              </a>
+            </li>
+            <li>
+              <a href="#contacts">
+                <EmailIcon fontSize={"large"} color={"primary"} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </ThemeProvider>
     </div>
   );
 };

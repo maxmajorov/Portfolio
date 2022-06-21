@@ -2,6 +2,8 @@
 
 .menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   width: 100vw;
   height: 100vh;
@@ -52,6 +54,14 @@
    margin-bottom: 30px;    
   }
 
+  }
+
+  .social ul {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    padding-left: 10%;
+    padding-bottom: 50px;
   }
 }
 
