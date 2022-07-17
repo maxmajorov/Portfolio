@@ -6,6 +6,13 @@
   align-items: center;
   padding-bottom: 50px;
 
+  @media screen and (max-width: 360px) {
+    position: relative;
+    margin-bottom: 50px;
+    flex-direction: row;
+    padding: 0;
+  }
+
   &__logo {
     width: 64px;
     height: 64px;
@@ -22,6 +29,14 @@
     text-transform: capitalize;
     line-height: 36px;
     color: $textColor; 
+
+    @media screen and (max-width: 360px) {
+      position: absolute;
+      width: auto;
+      bottom: 0px;
+      padding: 0;
+      margin: 0;
+    }
   }
 
 
@@ -32,6 +47,10 @@
     position: relative;
     background: rgba(85, 85, 85, 0.884);
     border-radius: 3px;
+
+    @media screen and (max-width: 360px) {
+      width: 100%;
+    }
     
     > span {
       display: block;
@@ -44,12 +63,13 @@
       right: 5px;
       bottom: 10px;   
     }
+
+   
   }
 }
 
 
 .skillItem {
-  margin-bottom: 30px;
   position: relative;
   animation: showUP 2.5s;
   z-index: 1;

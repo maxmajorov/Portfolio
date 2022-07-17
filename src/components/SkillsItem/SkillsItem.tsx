@@ -14,12 +14,6 @@ export const SkillsItem: React.FC<SkillsItemProps> = ({
 }) => {
   return (
     <li className={classes.skillItem}>
-      {/* <img
-        className={classes.skillItem__logo}
-        src={logo}
-        alt="skill-item-logo"
-      /> */}
-
       <h3 className={classes.skillItem__title}>{title}</h3>
       <div className={classes.skillItem__meter}>
         <span style={{ width: `${persent}%` }}></span>

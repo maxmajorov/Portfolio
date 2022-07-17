@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Menu } from "../../common/components/Menu/Menu";
 import classes from "./Header.module.scss";
 
 type ItemType = {
@@ -9,6 +10,14 @@ type ItemType = {
 export type MenuItemsType = Array<ItemType>;
 
 export const Header: React.FC = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const menuItems = [
+    { href: "#home", title: "Home", isActive: false },
+    { href: "#skills", title: "Skills", isActive: false },
+    { href: "#projects", title: "Projects", isActive: false },
+    { href: "#contacts", title: "Contacts", isActive: false },
+  ];
   return (
     <header className={classes.header}>
       <div className={classes.container}>
@@ -20,6 +29,22 @@ export const Header: React.FC = () => {
               </a>
             </div>
 
+            <div className="menu">
+              <nav className="burger">
+                <div
+                  className="burgerBtn"
+                  onClick={() => setMenuActive(!menuActive)}
+                >
+                  <span />
+                </div>
+              </nav>
+            </div>
+
+            <Menu
+              menuItems={menuItems}
+              active={menuActive}
+              setActive={setMenuActive}
+            />
             {/* <nav className={classes.navigation}>
               <ul className={classes.navigation__list}>
                 <li className={classes.navigation__item}>

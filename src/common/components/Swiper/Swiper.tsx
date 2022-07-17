@@ -2,7 +2,7 @@ import React from "react";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 import classes from "./Swiper.module.scss";
-// import "swiper/css";
+// import "swiper/scss/pagination";
 import "swiper/swiper.scss"; // core Swiper
 import "swiper/modules/navigation/navigation.scss"; // Navigation module
 import "swiper/modules/pagination/pagination.scss";

@@ -9,24 +9,24 @@ import { Footer } from "./components/Footer/Footer";
 import { Menu } from "./common/components/Menu/Menu";
 
 export const App: React.FC = () => {
-  const [menuActive, setMenuActive] = useState(false);
+  // const [menuActive, setMenuActive] = useState(false);
 
-  const menuItems = [
-    { href: "#home", title: "Home", isActive: false },
-    { href: "#skills", title: "Skills", isActive: false },
-    { href: "#projects", title: "Projects", isActive: false },
-    { href: "#contacts", title: "Contacts", isActive: false },
-  ];
+  // const menuItems = [
+  //   { href: "#home", title: "Home", isActive: false },
+  //   { href: "#skills", title: "Skills", isActive: false },
+  //   { href: "#projects", title: "Projects", isActive: false },
+  //   { href: "#contacts", title: "Contacts", isActive: false },
+  // ];
 
   return (
     <div className="App">
-      <div className="menu">
+      {/* <div className="menu">
         <nav className="burger">
           <div className="burgerBtn" onClick={() => setMenuActive(!menuActive)}>
             <span />
           </div>
         </nav>
-      </div>
+      </div> */}
 
       <div>
         <Header />
@@ -37,11 +37,11 @@ export const App: React.FC = () => {
         <Footer />
       </div>
 
-      <Menu
+      {/* <Menu
         menuItems={menuItems}
         active={menuActive}
         setActive={setMenuActive}
-      />
+      /> */}
     </div>
   );
 };

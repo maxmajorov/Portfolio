@@ -20,20 +20,6 @@ export const Contacts: React.FC = () => {
                       placeholder="Name"
                       className={classes.formInput}
                     />
-                  </div>
-                </div>
-                <div className={classes.col_6}>
-                  <div className={classes.formGroup}>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      className={classes.formInput}
-                    />
-                  </div>
-                </div>
-                <div className={classes.col_6}>
-                  <div className={classes.formGroup}>
                     <input
                       type="tel"
                       name="phone"
@@ -44,6 +30,12 @@ export const Contacts: React.FC = () => {
                 </div>
                 <div className={classes.col_6}>
                   <div className={classes.formGroup}>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      className={classes.formInput}
+                    />
                     <input
                       type="text"
                       name="subject"
