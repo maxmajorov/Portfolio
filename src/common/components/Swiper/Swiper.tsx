@@ -2,7 +2,7 @@ import React from "react";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 import classes from "./Swiper.module.scss";
-// import "swiper/scss/pagination";
+// import "swiper/css";
 import "swiper/swiper.scss"; // core Swiper
 import "swiper/modules/navigation/navigation.scss"; // Navigation module
 import "swiper/modules/pagination/pagination.scss";
@@ -43,6 +43,7 @@ export const MySwiper: React.FC<MySwiperPropsType> = ({ projects }) => {
               image={work.image}
               title={work.title}
               description={work.description}
+              link={work.link}
             />
           </SwiperSlide>
         ))}

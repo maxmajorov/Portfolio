@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
  
   &:hover {
     background-color: $primaryColor;
@@ -59,7 +59,8 @@
     text-transform: uppercase;
     color: $primaryColor;
     letter-spacing: 2px;
-    font-weight: 600;   
+    font-weight: 600;
+    padding-bottom: 30px;
     cursor: pointer; 
   }
 }

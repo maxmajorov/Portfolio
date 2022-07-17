@@ -2,8 +2,9 @@ import React from "react";
 import classes from "./ProjectsList.module.scss";
 import { v1 } from "uuid";
 import { Title } from "../../common/components/Title/Title";
-import social from "../../assets/img/social.jpg";
+import social from "../../assets/img/social.png";
 import todo from "../../assets/img/todo.jpg";
+import quiz from "../../assets/img/quiz.jpg";
 import { MySwiper } from "../../common/components/Swiper/Swiper";
 
 export type WorksStateType = {
@@ -11,6 +12,7 @@ export type WorksStateType = {
   title: string;
   description: string;
   image: { backgroundImage: string };
+  link: string;
 };
 
 const worksState: Array<WorksStateType> = [
@@ -19,18 +21,21 @@ const worksState: Array<WorksStateType> = [
     title: "Social Network",
     description: "Stack: React, TS, Redux, React-Redux, Material UI, axios",
     image: { backgroundImage: `url(${social})` },
+    link: "https://github.com/maxmajorov/social-network",
   },
   {
     id: v1(),
-    title: "ToDo List",
+    title: "Todo List",
     description: "Stack: React, TS, Redux, React-Redux, Material UI, axios",
     image: { backgroundImage: `url(${todo})` },
+    link: "https://todolist-react-redux-ts.herokuapp.com/",
   },
   {
     id: v1(),
-    title: "Counter",
+    title: "Training Cards",
     description: "Stack: React, TS, Redux, React-Redux, Virtual Router Dom",
-    image: { backgroundImage: `url(${social})` },
+    image: { backgroundImage: `url(${quiz})` },
+    link: "https://maxmajorov.github.io/training-cards/",
   },
 ];
 
