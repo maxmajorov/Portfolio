@@ -1,8 +1,10 @@
 @import '../../common/styles/scss/variables.scss';
 
 .projects {
+  position: relative;
   background-color: $backgroundColorDark;
   padding: 120px 0;
+ 
   
   @media (min-width: 360px) {
     height: 100%;
