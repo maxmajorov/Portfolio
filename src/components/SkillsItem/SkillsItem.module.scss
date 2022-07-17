@@ -69,16 +69,16 @@
 }
 
 
-.skillItem {
-  position: relative;
-  animation: showUP 2.5s;
-  z-index: 1;
-}
+// .skillItem {
+//   position: relative;
+//   animation: showUP 2.5s;
+//   z-index: 1;
+// }
   
-  @keyframes showUP {
+//   @keyframes showUP {
   
-  from {top:-100%;}
+//   from {top:-100%;}
   
-  to {top:0;}
+//   to {top:0;}
   
-  }
+//   }

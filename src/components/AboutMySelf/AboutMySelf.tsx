@@ -3,6 +3,8 @@ import classes from "./AboutMySelf.module.scss";
 import avatar from "../../assets/img/avatar.jpg";
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
+//@ts-ignore;
+import ReactTypingEffect from "react-typing-effect";
 
 const particlesOpt = {
   fpsLimit: 60,
@@ -94,7 +96,10 @@ export const AboutMySelf: React.FC = () => {
         <div className={classes.introduce}>
           <h4 className={classes.greeting}>Hi There</h4>
           <h1 className={classes.name}>I'm Maxim Predko</h1>
-          <h4 className={classes.specialization}>Front-End Developer</h4>
+          <ReactTypingEffect
+            className={classes.specialization}
+            text={["Front-End Developer", "React", "Redux", "TypeScript"]}
+          />
           <a href="#contacts" className={classes.btn}>
             Contact me
           </a>

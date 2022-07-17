@@ -6,6 +6,8 @@ import redux from "../../assets/img/redux.png";
 import ts from "../../assets/img/ts.png";
 import { v1 } from "uuid";
 import { Title } from "../../common/components/Title/Title";
+//@ts-ignore
+import Fade from "react-reveal/Fade";
 
 export const SkillsList: React.FC = () => {
   type SkillsStateType = {
@@ -73,19 +75,21 @@ export const SkillsList: React.FC = () => {
 
   return (
     <section id="skills" className={classes.skills}>
-      <div className={classes.container}>
-        <Title title="my skils" />
-        <ul className={classes.list}>
-          {skillsState.map((skill) => (
-            <SkillsItem
-              key={skill.id}
-              logo={skill.logo}
-              title={skill.title}
-              persent={skill.persent}
-            />
-          ))}
-        </ul>
-      </div>
+      <Fade bottom>
+        <div className={classes.container}>
+          <Title title="my skils" />
+          <ul className={classes.list}>
+            {skillsState.map((skill) => (
+              <SkillsItem
+                key={skill.id}
+                logo={skill.logo}
+                title={skill.title}
+                persent={skill.persent}
+              />
+            ))}
+          </ul>
+        </div>
+      </Fade>
     </section>
   );
 };
