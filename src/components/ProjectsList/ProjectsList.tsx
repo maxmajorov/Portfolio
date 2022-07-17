@@ -19,21 +19,24 @@ const worksState: Array<WorksStateType> = [
   {
     id: v1(),
     title: "Social Network",
-    description: "Stack: React, TS, Redux, React-Redux, Material UI, axios",
+    description:
+      "Stack: TypeScript, React, Redux, Redux-thunk, React-Router-Dom, Axios, Redux-form, Ant Design, Reselect",
     image: { backgroundImage: `url(${social})` },
     link: "https://github.com/maxmajorov/social-network",
   },
   {
     id: v1(),
     title: "Todo List",
-    description: "Stack: React, TS, Redux, React-Redux, Material UI, axios",
+    description:
+      "Stack: TypeScript, React, Redux, Redux-thunk, React-Router-Dom, Axios, Material-UI",
     image: { backgroundImage: `url(${todo})` },
     link: "https://todolist-react-redux-ts.herokuapp.com/",
   },
   {
     id: v1(),
     title: "Training Cards",
-    description: "Stack: React, TS, Redux, React-Redux, Virtual Router Dom",
+    description:
+      "Stack: TypeScript, React, Redux, Redux-thunk, React-Router-Dom, Axios, Formik, Material-UI",
     image: { backgroundImage: `url(${quiz})` },
     link: "https://maxmajorov.github.io/training-cards/",
   },

@@ -10,14 +10,14 @@ type ItemType = {
 export type MenuItemsType = Array<ItemType>;
 
 export const Header: React.FC = () => {
-  const [menuActive, setMenuActive] = useState(false);
+  // const [menuActive, setMenuActive] = useState(false);
 
-  const menuItems = [
-    { href: "#home", title: "Home", isActive: false },
-    { href: "#skills", title: "Skills", isActive: false },
-    { href: "#projects", title: "Projects", isActive: false },
-    { href: "#contacts", title: "Contacts", isActive: false },
-  ];
+  // const menuItems = [
+  //   { href: "#home", title: "Home", isActive: false },
+  //   { href: "#skills", title: "Skills", isActive: false },
+  //   { href: "#projects", title: "Projects", isActive: false },
+  //   { href: "#contacts", title: "Contacts", isActive: false },
+  // ];
   return (
     <header className={classes.header}>
       <div className={classes.container}>
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
                 MAX<span style={{ color: "#ff0066" }}>I</span>M
               </a>
             </div>
-
+            {/* 
             <div className="menu">
               <nav className="burger">
                 <div
@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
               menuItems={menuItems}
               active={menuActive}
               setActive={setMenuActive}
-            />
+            /> */}
             {/* <nav className={classes.navigation}>
               <ul className={classes.navigation__list}>
                 <li className={classes.navigation__item}>
