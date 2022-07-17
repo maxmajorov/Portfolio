@@ -105,6 +105,7 @@
                   color: $textColor;
                   font-size: 14px;
                   background-color: $backgroundColorDark;
+
                 }
               }
             }
@@ -116,6 +117,12 @@
 }
 }
 
+input:focus, textarea:focus { 
+    transform: scale(1.01);
+    outline: 1px solid $primaryColor;
+    box-shadow: 0px 0px 12px 6px $primaryColor;
+    transition: ease-in-out 0.3s;  
+}
 
 
 

@@ -28,6 +28,10 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -72,6 +76,7 @@ input, select, textarea, button {
   border: none;
   outline: none;
 }
+
 
 button, input, optgroup, select, textarea {
   margin: 0;

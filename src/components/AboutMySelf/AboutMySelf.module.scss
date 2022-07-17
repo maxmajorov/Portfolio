@@ -119,12 +119,25 @@
           font-weight: 600;
           text-align: center;
           transition: all .5s;
+
+          &:hover {
+            transform: translate(2px, 2px);
+            background-color: #fff;
+            color: $primaryColor;
+            box-shadow: 0px 0px 20px 7px $primaryColor;
+            transition: ease-in-out 0.5s;
+          }
         }
       }
 
       .avatar {  
         position: relative;
         transform: translateX(-85px);
+
+        &:hover {
+          transform: scale(1.2);         
+          transition: ease-in-out 1s;
+        }
 
         @media only screen and (max-width: 1430px) {
           transform: translateX(0);
@@ -148,6 +161,8 @@
           border: 5px solid $primaryColor;
           border-radius: 10px;
           transform: rotate(45deg);
+
+         
 
           @media only screen and (max-width: 1430px) {
             top: 0px;
@@ -176,6 +191,11 @@
           transform: rotate(45deg);
           overflow: hidden;
           border-radius: 10px;
+
+          &:hover {
+            box-shadow: 3px 0px 12px 25px $primaryColor;
+            transition: ease-in-out 0.2s;
+          }
 
           @media only screen and (max-width: 1430px) {
             width: 80%;

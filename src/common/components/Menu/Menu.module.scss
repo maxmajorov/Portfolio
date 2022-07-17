@@ -79,6 +79,17 @@
         margin-right: 10px;
       }
     }
+
+    
+      .links {
+        &:hover {
+          transform: translate(2px, 2px);
+          border-radius: 50%;
+          color: $primaryColor;
+          box-shadow: 0px 0px 20px 7px $primaryColor;
+          transition: ease-in-out 0.5s;
+        }
+      }
   } 
 }
 
