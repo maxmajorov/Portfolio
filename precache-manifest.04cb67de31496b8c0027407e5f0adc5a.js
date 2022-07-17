@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bddc3e294e9fbccae6fc0437665e5953",
+    "revision": "e3380688a9f977c3f3c791dc82d171a0",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "071f043b549185e1aa6c",
+    "revision": "7d98578c155e48c5cd3e",
     "url": "/Portfolio/static/css/2.acf94c4a.chunk.css"
   },
   {
-    "revision": "edcc8665b99baa7b0651",
-    "url": "/Portfolio/static/css/main.b3e46ab0.chunk.css"
+    "revision": "8db36e6d29a57d5f0143",
+    "url": "/Portfolio/static/css/main.324eb599.chunk.css"
   },
   {
-    "revision": "071f043b549185e1aa6c",
-    "url": "/Portfolio/static/js/2.ac3da1b0.chunk.js"
+    "revision": "7d98578c155e48c5cd3e",
+    "url": "/Portfolio/static/js/2.99801bd8.chunk.js"
   },
   {
-    "revision": "898f5873a9fbc080af3a551e1bb50363",
-    "url": "/Portfolio/static/js/2.ac3da1b0.chunk.js.LICENSE.txt"
+    "revision": "80fe3efeeed3c2645ee4eb91e644a070",
+    "url": "/Portfolio/static/js/2.99801bd8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edcc8665b99baa7b0651",
-    "url": "/Portfolio/static/js/main.c73366ae.chunk.js"
+    "revision": "8db36e6d29a57d5f0143",
+    "url": "/Portfolio/static/js/main.339303db.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
@@ -64,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/avatar.db5b5c57.jpg"
   },
   {
+    "revision": "978f614af04172e15174b29c786e5500",
+    "url": "/Portfolio/static/media/quiz.978f614a.jpg"
+  },
+  {
     "revision": "65fe5ca450758865a59d82b01d637a6e",
     "url": "/Portfolio/static/media/react.65fe5ca4.png"
   },
@@ -72,12 +76,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/redux.b8b5a3d1.png"
   },
   {
-    "revision": "51681cd4336b76d0f6045f330a059856",
-    "url": "/Portfolio/static/media/social.51681cd4.jpg"
+    "revision": "67f09122d24f0573b60aff9ab50b3420",
+    "url": "/Portfolio/static/media/social.67f09122.png"
   },
   {
-    "revision": "b7ff873a32946d479fa9c555ab928876",
-    "url": "/Portfolio/static/media/todo.b7ff873a.jpg"
+    "revision": "c57c62a57b169aec9c255e12b0c2621a",
+    "url": "/Portfolio/static/media/todo.c57c62a5.jpg"
   },
   {
     "revision": "9b541fa316cc0c5a83c99da02e889a71",
