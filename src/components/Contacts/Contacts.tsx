@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import { Button } from "../../common/components/Button/Button";
 import { Title } from "../../common/components/Title/Title";
 import classes from "./Contacts.module.scss";
+import axios from "axios";
 
 export const Contacts: React.FC = () => {
   const formik = useFormik({
@@ -41,10 +42,11 @@ export const Contacts: React.FC = () => {
     },
 
     onSubmit: (values) => {
-      //   dispatch(registerTC(values.email, values.password));
-      alert(JSON.stringify(values, null, 2));
+      console.log(JSON.stringify(values, null, 2));
 
-      axios.post("https://");
+      axios
+        .post("https://gmail-smtp-nodejs.herokuapp.com/send-message", values)
+        .then((res) => alert("Your message has been send"));
     },
   });
 

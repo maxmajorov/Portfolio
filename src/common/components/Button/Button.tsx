@@ -8,11 +8,7 @@ type ButtonPropsType = {
 export const Button: React.FC<ButtonPropsType> = ({ title }) => {
   return (
     <div className={classes.centeredButton}>
-      <button
-        className={classes.btn}
-        type={"submit"}
-        onClick={() => console.log("click")}
-      >
+      <button className={classes.btn} type={"submit"}>
         message me
       </button>
     </div>
