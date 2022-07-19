@@ -7,8 +7,11 @@ import { SkillsList } from "./components/SkillsList/SkillsList";
 import { Contacts } from "./components/Contacts/Contacts";
 import { Footer } from "./components/Footer/Footer";
 import { Menu } from "./common/components/Menu/Menu";
+import { SendMesSnackbar } from "./common/components/Snackbar/Snackbar";
 
 export const App: React.FC = () => {
+  const [status, setStatus] = useState<null | string>(null);
+  console.log("app", status);
   const [menuActive, setMenuActive] = useState(false);
 
   const menuItems = [
@@ -20,6 +23,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="App">
+      <SendMesSnackbar status={status} setStatus={setStatus} />
       <div className="menu">
         <nav className="burger">
           <div className="burgerBtn" onClick={() => setMenuActive(!menuActive)}>
@@ -33,7 +37,7 @@ export const App: React.FC = () => {
         <AboutMySelf />
         <SkillsList />
         <ProjectsList />
-        <Contacts />
+        <Contacts setStatus={setStatus} />
         <Footer />
       </div>
 

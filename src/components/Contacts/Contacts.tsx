@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import { Button } from "../../common/components/Button/Button";
 import { Title } from "../../common/components/Title/Title";
 import classes from "./Contacts.module.scss";
 import axios from "axios";
 
-export const Contacts: React.FC = () => {
+type ContactsPropsType = {
+  setStatus: (status: null | string) => void;
+};
+
+export const Contacts: React.FC<ContactsPropsType> = ({ setStatus }) => {
+  const [btnDisable, setBtnDisable] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       sender: "",
@@ -35,18 +41,24 @@ export const Contacts: React.FC = () => {
       }
 
       if (!values.textMessage) {
-        errors.subject = "Required";
+        errors.textMessage = "Required";
       }
 
       return errors;
     },
 
     onSubmit: (values) => {
-      console.log(JSON.stringify(values, null, 2));
-
+      // console.log(JSON.stringify(values, null, 2));
+      setBtnDisable(true);
       axios
         .post("https://gmail-smtp-nodejs.herokuapp.com/send-message", values)
-        .then((res) => alert("Your message has been send"));
+        .then((res) => {
+          setStatus(res.data);
+          // alert("Your message has been send");
+          setBtnDisable(false);
+        });
+
+      formik.resetForm();
     },
   });
 
@@ -70,10 +82,12 @@ export const Contacts: React.FC = () => {
                       className={classes.formInput}
                     />
                     {formik.touched.sender && formik.errors.sender ? (
-                      <div style={{ color: "red" }}>{formik.errors.sender}</div>
+                      <div className={classes.errorMessage}>
+                        {formik.errors.sender}
+                      </div>
                     ) : null}
                     <input
-                      id="sender"
+                      id="phone"
                       type="tel"
                       name="phone"
                       placeholder="Phone"
@@ -82,7 +96,12 @@ export const Contacts: React.FC = () => {
                       className={classes.formInput}
                     />
                     {formik.touched.phone && formik.errors.phone ? (
-                      <div style={{ color: "red" }}>{formik.errors.phone}</div>
+                      <div
+                        style={{ top: "145px" }}
+                        className={classes.errorMessage}
+                      >
+                        {formik.errors.phone}
+                      </div>
                     ) : null}
                   </div>
                 </div>
@@ -98,7 +117,9 @@ export const Contacts: React.FC = () => {
                       className={classes.formInput}
                     />
                     {formik.touched.email && formik.errors.email ? (
-                      <div style={{ color: "red" }}>{formik.errors.email}</div>
+                      <div className={classes.errorMessage}>
+                        {formik.errors.email}
+                      </div>
                     ) : null}
                     <input
                       id="subject"
@@ -110,7 +131,10 @@ export const Contacts: React.FC = () => {
                       value={formik.values.subject}
                     />
                     {formik.touched.subject && formik.errors.subject ? (
-                      <div style={{ color: "red" }}>
+                      <div
+                        style={{ top: "145px" }}
+                        className={classes.errorMessage}
+                      >
                         {formik.errors.subject}
                       </div>
                     ) : null}
@@ -127,14 +151,14 @@ export const Contacts: React.FC = () => {
                       value={formik.values.textMessage}
                     />
                     {formik.touched.textMessage && formik.errors.textMessage ? (
-                      <div style={{ color: "red" }}>
+                      <div className={classes.errorMessage}>
                         {formik.errors.textMessage}
                       </div>
                     ) : null}
                   </div>
                 </div>
                 <div className={classes.col_12}>
-                  <Button />
+                  <Button disabled={btnDisable} />
                 </div>
               </div>
             </form>

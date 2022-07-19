@@ -62,14 +62,23 @@
               }
 
               .formGroup {
+                position: relative;
               
-                .formInput {
+                .formInput {                 
                   width: 90%;
                   color: $textColor;
                   font-size: 14px;
                   background-color: $backgroundColorDark;
                   padding: 20px; 
                   margin-bottom: 30px;          
+                }
+
+                .errorMessage {
+                  position: absolute;
+                  top: 60px;
+                  left: 5px;
+                  font-size: 12px;
+                  color: red,
                 }
               }
             }
@@ -96,6 +105,7 @@
               }
 
               .formGroup {
+                position: relative;
                 margin-bottom: 30px;
 
                 textarea {
@@ -105,7 +115,14 @@
                   color: $textColor;
                   font-size: 14px;
                   background-color: $backgroundColorDark;
-
+                }
+                
+                .errorMessage {
+                  position: absolute;
+                  top: 162px;
+                  left: 5px;
+                  font-size: 12px;
+                  color: red,
                 }
               }
             }
